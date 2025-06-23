@@ -1,7 +1,6 @@
-name: t2i-ddm
+name: t2i-ddm-amd
 channels:
   - pytorch
-  - nvidia
   - conda-forge
   - defaults
 dependencies:
@@ -10,7 +9,7 @@ dependencies:
   - pip:
     - torch
     - torchvision
-    - --index-url https://download.pytorch.org/whl/cu121
+    - torch-directml
     - diffusers
     - transformers
     - accelerate
@@ -19,6 +18,4 @@ dependencies:
     - img2dataset
     - wandb
     - einops
-    - timm
-    - xformers
-    - flash-attn 
+    - timm 
