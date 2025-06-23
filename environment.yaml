@@ -18,4 +18,4 @@ dependencies:
     - img2dataset
     - wandb
     - einops
-    - timm 
+    - tim
